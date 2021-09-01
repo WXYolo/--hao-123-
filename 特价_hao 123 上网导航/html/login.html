@@ -270,15 +270,88 @@ line-height: 40px;
         	color: #6c6c6c;
 font-size: 12px;
         }
+        .view-type-password{
+            height: 44px;
+width: 100%;
+margin: 0 auto;
+        }
+        .iconfontOn{
+            background: url('../../img/login/pc.png') no-repeat right 0;
+        }
+        .master-login-title{
+            height: 18px;
+line-height: 18px;
+font-size: 16px;
+color: #3c3c3c;
+margin-top: 9px;
+padding-bottom: 8px;
+font-weight: 700;
+        }
+        .nc-outer-box{
+            width: 100%;
+margin: 0 auto;padding-top: 2px;
+        }
+        .login-blocks{
+            margin: 8px 0;
+text-align: right;
+        }
+        .login-blocks a{
+             color: #6c6c6c;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .qrcode-img{
+            position: relative;
+margin: 20px auto;
+font-size: 14px;
+background-color: #fff;
+
+box-shadow: 0 0 8px #ddd;
+opacity: 1;
+width: 140px;
+height: 140px;
+        }
+        .qrcode-desc{
+            width: 188px;overflow: hidden;
+margin: 0 auto;
+        }
+        .qrcode-desc p{
+            
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
-        <div id="login">
+        <!-- 扫码登录 -->
+        <i class="iconfont iconfontOn"></i>
+        <!-- 扫码登录DIV -->
+        <div class="sm-login">
+            <div class="view-type-password">
+                <div class="master-login-title">手机扫码，安全登录</div>
+            </div>
+            <div class="nc-outer-box">
+                <div class="qrcode-login">
+                    <div>
+                        <div class="qrcode-img">
+                            <img src="../../img/login/ewm.png">
+                        </div>
+                        <div class="qrcode-desc">
+                            <img src="../../img/login/smm.png" class="fl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="login-blocks">
+                        <a href="#">密码登录</a>
+                        <a href="#">免费注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="login" style="display: none;">
             <div class="corner-icon-view view-type-qrcode">
-            	<!-- 扫码登录 -->
-                <i class="iconfont"></i>
+            	
                 <div class="login-tip">
                     <div class="poptip">
                         <div class="poptip-arrow">
@@ -340,7 +413,7 @@ font-size: 12px;
                                     <input type="text" placeholder="请输入登录密码" name="">
                                 </div>
                                 <div class="send-btn">
-                                	<a class="send-btn-link">获取验证码</a>
+                                	<a href="#" class="send-btn-link">获取验证码</a>
                                 </div>
                             </div>
                             <div class="fm-btn">
