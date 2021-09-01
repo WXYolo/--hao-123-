@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>天猫商品</title>
+	<!-- cSS样式重置 -->
+	<link rel="stylesheet" type="text/css" href="../common/common-css/common.css">
+	<!-- JS公用方法 -->
+	<script type="text/javascript" src="../common/common-js/Database.js"></script>
+	<!-- 全部js -->
+	<script type="text/javascript" src="../js/tianmaoJs/tianmao.js"></script>
+	<!-- —————————————————————————————————————————————————————————————————————— -->
+	<!-- css 导航nav样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/tianmaoCss/nav.css">
+	<!-- css 头部header样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/tianmaoCss/header.css">
+	<!-- css 商品datail样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/tianmaoCss/datail.css">
+</head>
+<body>
+	<!-- 登录 -->
+	<div class="login">
+		
+	</div>
+	<!-- 登录end -->
+	<!-- 导航区域nav -->
+	<div id="nav">
+		<div class="sn-bd cf">
+			<div class="back-home">
+				<i>󰄫</i>
+				<a href="//www.tmall.com/">天猫首页</a>
+			</div>
+			<div class="login-info">
+				<em>喵，欢迎来天猫</em>
+				<a href="#" class="btn_login">请登录</a>
+				<a href="#" class="btn_register">免费注册</a>
+			</div>
+			<ul class="quick-menu">
+				<li>
+					<a href="#" class="qucik-a">
+						我的淘宝
+						<b></b>
+					</a>
+				</li>
+				<li class="card">
+					<i>󰅈</i>
+					<a href="#">购物车</a>
+				</li>
+				<li>
+					<a href="#" class="qucik-a">
+						收藏夹
+						<b></b>
+					</a>
+				</li>
+				<li class="gang"></li>
+				<li class="card link">
+					<i>󰅈</i>
+					<a href="#">手机版</a>
+				</li>
+				<li class="card tbw">
+					<a href="#">淘宝网</a>
+				</li>
+				<li>
+					<a href="#" class="qucik-a">
+						商家支持
+						<b></b>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="qucik-a">
+						<i>󰅈</i>
+						我的淘宝
+						<b></b>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 导航区域nav end -->
+	<!-- header 头部区域 -->
+	<div id="header">
+		<div class="headerCon">
+			<h1 id="mallLogo">
+				<span></span>
+			</h1>
+			<div id="shopExtra">
+				<div class="slogo">
+					<a class="slogo-a" href="#">天天特卖工厂店</a>
+					<a class="onlin" href="#"></a>
+				</div>
+				<div class="shop-info"></div>
+				<div class="jt">
+					<i></i>
+				</div>
+			</div>
+			<div class="shopwt">
+				<div class="shopwt-txt">手机逛</div>
+				<i></i>
+				<div class="jt">
+					<i></i>
+				</div>
+				<div class="sm">
+					<img src="../img/shopping/sm.png">
+					<p>扫一扫，手机逛起来</p>
+				</div>
+			</div>
+			<div class="header-extra">
+				<div class="mall-search">
+					<form class="mallSearch-form">
+						<div class="defaultSearch">
+							<div class="s-combobox">
+								<div class="s-combobox-input-wrap">
+									<input type="text" class="s-combobox-input" name="" id="mq" title="请输入搜索文字">
+								</div>
+								<label for="mq" class="s-combobox-placeholder">搜索 天猫 商品/品牌/店铺</label>
+							</div>
+							<button id="J_SearchBtn">搜天猫</button>
+						</div>
+						<button class="currShopBtn">搜本店</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tb-shop">
+		<div class="layou">
+			<div class="J_TModule">
+				<div class="skin-box"></div>
+			</div>
+			<div class="J_TModule">
+				<div class="tshop-pbs">
+					<div class="skin-box-bd">
+						<div class="all-cats">
+							<a class="link" href="#">
+								<span>本店所有商品</span>
+								<i class="icon-i"></i>
+							</a>
+						</div>
+						<ul class="menu-list">
+							<li>
+								<a href="#">
+									<span>首页</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>清洁洗护</span>
+									<i class="icon-i"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>客厅用品</span>
+									<i class="icon-i"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>出行防护</span>
+									<i class="icon-i"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>餐厨用品</span>
+									<i class="icon-i"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>卫浴用品</span>
+									<i class="icon-i"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header 头部区域 end  -->
+	<!-- detail商品区域 -->
+	<div class="datail" style="">
+		<div class="J_DetailMeta">
+			<div class="tm-clear">
+				<div class="tb-property fr">
+					<div class="tb-wrap">
+						<div class="tb-detail-hd">
+							<h1></h1>
+							<p class="newp"></p>
+						</div>
+						<div class="tm-fcs-panel">
+							<div class="tm-price-cur">
+								<span class="fl">价格</span>
+								<div>
+									<span class="tm-yen">¥</span>
+									<span class="tm-price">5.20</span>
+								</div>
+							</div>
+						</div>
+						<div class="tb-meta">
+							<div class="tm-delivery-panel">
+								<span class="tb-metatit">运费</span>
+								<div class="tb-dz">
+									<span class="J_AddrSelectTrigger">
+										<span>
+											杭州
+											<i></i>
+										</span>
+										<span>
+											上城区
+											<i></i>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="tm-ind-panel">
+							<div>
+								<span class="tm-label">累计评价</span>
+								<span class="tm-count"></span>
+							</div>
+						</div>
+						<!-- ------------- -->
+						<div class="tb-key">
+							<div class="tb-sku">
+								<dl class="tb-prop cf">
+									<dt>颜色分类</dt>
+									<dd>
+										<ul class="cf J_TSalePro tabul">
+											
+										</ul>
+									</dd>
+								</dl>
+								<dl class="tb-amoun cf">
+									<dt>数量</dt>
+									<dd>
+										<!-- 加加减减 -->
+										<span class="tb-amount-widge">
+											<input type="text" name="num" value="1" maxlength="8" >
+											<span class="mui-amount-btn">
+												<span class="topMui"></span>
+												<span class="botMui"></span>
+											</span>
+											<!-- 加加减减 -->
+											<span class="mui-amount-unit">件</span>
+										</span>
+									</dd>
+								</dl>
+								<div class="tb-action">
+									<div class="tb-btn-buy">
+										<a href="#">立即购买</a>
+									</div>
+									<div class="tb-btn-baske">
+										<a href="#">加入购物车</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- --------------- -->
+						<div class="tm-se">
+							<dl>
+								<dt>服务承诺</dt>
+								<dd>
+									<ul>
+										<li><a href="#"> 正品保证</a></li>
+										<li><a href="#"> 极速退款</a></li>
+										<li><a href="#"> 退货运费险</a></li>
+										<li><a href="#"> 七天无理由退还</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<div class="tm-pay-box">
+								支付方式
+								<i></i>
+							</div>
+						</div>
+						<div class="tb-text">检测到您当前处于非安全网络环境，部分商品信息可能不准确，请在交易支付页面再次确认商品价格信息。</div>
+					</div>
+				</div>
+				<!-- 放大镜 -->
+				<div class="tb-gallery">
+					<div class="tb-booth">
+						<a href="#">
+							<img class="s-img" src="https://img.alicdn.com/imgextra/i1/3937219703/O1CN01CP1hfR2LY1j8vBnH6_!!3937219703-0-C2M.jpg">
+							<div class="fldiv"></div>
+						</a>
+						<div class="ks-overlay"><img class="b-img" src="https://img.alicdn.com/imgextra/i1/3937219703/O1CN01CP1hfR2LY1j8vBnH6_!!3937219703-0-C2M.jpg"></div>
+					</div>
+					<div class="tb-thumb-warp">
+						<ul class="tb-thumb"></ul>
+					</div>
+					<p class="tm-action">
+						<span class="J_EditItem fr">
+							<a href="#">举报</a>
+						</span>
+						<a class="J_AddFavorite" href="#">收藏商品</a>
+						<span class="J_CollectCount"></span>
+					</p>
+				</div>
+				<!-- 放大镜end -->
+			</div>
+			<div class="ald-skuRight">
+				<div class="ald-inner">
+					<div class="ald-hd">
+						<s></s>
+						<span>看了又看</span>
+					</div>
+					<div class="ald-carousel">
+						<div class="wrapCon">
+							<ul>
+							
+							</ul>
+						</div>
+						<ul>
+							<li class="prev_a btn_a"></li>
+							<li class="next_a btn_a"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- detail商品区域end -->
+</body>
+<script type="text/javascript">
+	const init=()=>{
+		getData();
+		zoom();
+	};
+	init();
+</script>
+</html>

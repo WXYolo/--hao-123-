@@ -1,0 +1,373 @@
+#seckill{
+	margin-top: 30px;
+	overflow: hidden;
+}
+.guochao{
+	overflow: hidden;
+	position: relative;
+	width: 308px;
+	height: 632px;
+	background: #f1eade;
+	border-radius: 20px 2px 2px 20px;
+}
+.seck-r{
+	width: 970px;
+	margin-left: 2px;
+}
+.guochao-info{
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 217px;
+	border-radius: 0 0 40px 40px;
+}
+.guochao-list{
+	position: absolute;
+	left: 0;
+	top: 160px;
+	z-index: 2;
+	width: 100%;
+}
+.guochao-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+}
+.guochao-inner h2{
+	overflow: hidden;
+	height: 30px;
+	padding-top: 46px;
+	font-family: WD-XLLubrifontSC-Regular;
+	font-weight: 700;
+	font-size: 24px;
+	color: #fff;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1;
+}
+.guochao-bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: no-repeat url(../img/guochao.jpg) center / cover;
+}
+.guochao-lis{
+	width: 268px;
+	margin: 0 auto 20px;
+	height: 98px;
+	background: #fff;
+	border-radius: 53px;
+}
+.guochao-a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.guochao-a>img{
+	float: left;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin: 4px;
+}
+.guochao-a-text{
+	overflow: hidden;
+	float: left;
+	width: 142px;
+	height: 40px;
+	margin-top: 14px;
+	margin-left: 8px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #222;
+	text-align: justify;
+	line-height: 20px;
+}
+.guochao-a-text img{
+	height: 16px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+.guochao-a-text:hover{
+	color: #ff1f33;
+}
+.guochao-price{
+	overflow: hidden;
+	float: left;
+	width: 142px;
+	height: 31px;
+	margin-top: 3px;
+	margin-left: 8px;
+}
+.guochao-price span{
+	font-family: Arial-BoldMT;
+	font-size: 12px;
+	color: #ff3b1f;
+	line-height: 31px;
+}
+.seck-t{
+	overflow: hidden;
+	height: 350px;
+	position: relative;
+	background: #fff;
+	border-radius: 2px 20px 2px 2px;
+}
+.seck-b{
+	margin-top: 2px;
+	height: 280px;
+	background: #fff;
+	border-radius: 2px 2px 20px;
+}
+.seck-t>h2{
+	padding: 25px 20px 0;
+	font-family: PingFangSC-Semibold;
+	font-size: 20px;
+	color: #222;
+	letter-spacing: 0;
+	line-height: 20px;
+	font-weight: 400;
+}
+.miaosha{
+	overflow: visible;
+	width: 970px;
+	height: 276px;
+	margin-top: 15px;
+	position: relative;
+	float: left;
+	background: #fff;
+	border-radius: 2px;
+}
+.time-wrap{
+	position: absolute;
+	left: 160px;
+	top: -40px;
+	width: 221px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 15px;
+	background: #f0f0f0;
+}
+.time-title{
+	float: left;
+	padding-left: 16px;
+	font-family: DINRoundPro-Medium;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-align: justify;
+	color: #999;
+}
+.time{
+	padding: 0 2px;
+}
+.time-datail{
+	float: right;
+	padding-top: 4px;
+	padding-right: 16px;
+}
+.time-datail span{
+	float: left;
+	width: 20px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 4px;
+	font-family: DINRoundPro-Medium;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 0;
+	background: #bbb;
+}
+.time-datail i{
+	float: left;
+	width: 10px;
+	margin-top: -6px;
+	text-align: center;
+	color: #bbb;
+}
+.progress-bar{
+	width: 42px;
+	background: transparent;
+	color: #999;
+	position: absolute;
+	right: 14px;
+	top: -49px;
+	height: 30px;
+	line-height: 30px;
+	font-family: DINRoundPro-Medium;
+	font-size: 18px;
+	border-radius: 15px;
+	text-align: center;
+	letter-spacing: 0;
+}
+.progress-first{
+	font-family: DINRoundPro-Medium;
+	font-size: 18px;
+	color: #333;
+	letter-spacing: 0;
+	line-height: 14px;
+}
+.gap{
+	position: relative;
+	top: -2px;
+	transform: rotate(15deg);
+	display: inline-block;
+	width: 2px;
+	margin: 0 3px;
+	height: 8px;
+	opacity: .5;
+	background: #999;
+}
+.progress-last{
+	font-family: DINRoundPro-Medium;
+	font-size: 18px;
+	color: #999;
+	line-height: 14px;
+}
+.miaosha:hover .btn{
+	display: block;
+}
+.seck-b{
+	margin-top: 2px;
+	height: 280px;
+	background: #fff;
+	border-radius: 2px 2px 20px;
+}
+.seck-b>h2{
+	padding: 20px;
+	font-family: PingFangSC-Semibold;
+	font-size: 20px;
+	color: #222;
+	letter-spacing: 0;
+	line-height: 20px;
+}
+.seck-b-list{
+	overflow: hidden;
+	margin: 0 10px;
+}
+.seck-b-list li{
+	float: left;
+	width: 170px;
+	height: 196px;
+	margin: 0 10px;
+}
+.seck-b-list a{
+	display: block;
+}
+.img-seck{
+	position: relative;
+	overflow: hidden;
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+}
+.img-seck img{
+	width: 170px;
+	height: 170px;
+	transition: all 300ms ease-in-out 0s;
+}
+.img-seck:hover img{
+	transform: scale(1.12);
+}
+.desc{
+	overflow: hidden;
+	height: 14px;
+	padding-top: 12px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #222;
+	text-align: center;
+	line-height: 14px;
+}
+.desc:hover{
+	color: #ff1f33;
+}
+.miaosha-list{
+	overflow: visible;
+	padding: 0 10px;
+	height: 100%;
+	width: 999em;
+	position: absolute;
+	top: 0;
+}
+.miaosha-list>li{
+	float: left;
+	width: 950px;
+}
+.sWrap{
+	position: relative;
+	float: left;
+	width: 170px;
+	height: 256px;
+	padding: 10px;
+	z-index: 0;
+}
+.sWrap:hover{
+	background: #fff;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+	border-radius: 12px;
+	z-index: 1;
+}
+.sWrap a{
+	display: block;
+	position: relative;
+	width: 170px;
+	height: 256px;
+}
+.sWrap img{
+	width: 170px;
+	height: 170px;
+	border-radius: 12px;
+	border: 1px solid rgba(0,0,0,.05);
+}
+.sWrap-title{
+	overflow: hidden;
+	height: 40px;
+	margin-top: 5px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #222;
+	line-height: 20px;
+}
+.sWrap-title:hover{
+	color:#ff1f33;
+}
+.prices{
+	width: 170px;
+	height: 28px;
+	line-height: 28px;
+	margin-top: 8px;
+	background: no-repeat url(../img/prices.png) left / contain;
+	border-radius: 6px;
+}
+.prices-spa{
+	float: left;
+	width: 115px;
+	height: 100%;
+	text-align: center;
+	font-family: Arial-BoldMT;
+	font-size: 12px;
+	color: #fff;
+}
+.number{
+	font-family: DINRoundPro-Medium;
+	font-size: 24px;
+	color: #fff;
+}
+.origin{
+	float: right;
+	width: 55px;
+	height: 100%;
+	text-align: center;
+	text-decoration: line-through;
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	color: #999;
+}

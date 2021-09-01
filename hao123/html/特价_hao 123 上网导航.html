@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>特价_hao 123 上网导航</title>
+	<!-- cSS样式重置 -->
+	<link rel="stylesheet" type="text/css" href="../common/common-css/common.css">
+	<!-- JS公用方法 -->
+	<script type="text/javascript" src="../common/common-js/Database.js"></script>
+	<!-- 全部js -->
+	<script type="text/javascript" src="../js/all.js"></script>
+	<!-- —————————————————————————————————————————————————————————————————————— -->
+	<!-- css 头部header样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<!-- css 轮播图banner样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/banner.css">
+	<!-- css 特价秒杀seckill样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/seckill.css">
+	<!-- css 热门推荐recommoned样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/recommend.css">
+	<!-- css 主体内容center样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/center.css">
+	<!-- css 底部footer样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+</head>
+<body>
+	<!-- 头部header区域 -->
+	<div id="header" class="header">
+		<div class="header_box">
+			<div class="logo">
+				<a class="logo_a1" href="#">
+					<img src="../img/logo.png">
+				</a>
+				<a href="#" class="logo_a2">便宜买好货</a>
+			</div>
+			<div class="searchDiv">
+				<form class="searchForm">
+					<input type="text" name="searchInput" placeholder="led灯泡">
+					<span class="searchSpa"></span>
+					<input type="submit" value="搜索" name="searchSub">
+				</form>
+				<div class="hotwords cf"></div>
+			</div>
+			<div class="navigationDiv">
+				<div class="navigation">
+					<span class="icon"></span>
+					<span class="navText">网址导航</span>
+					<span class="expBtn"></span>
+				</div>
+				<div class="navigationBox"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部end -->
+<!-- ------------------------------------------------------------------------ -->
+	<div id="box">
+			<!-- 轮播图banner区域 -->
+		<div id="banner">
+			<div class="banner_left fl">
+				<ul class="banner_left_list"></ul>
+			</div>
+			<div class="banner_right fl">
+				<div class="banner_right_header">
+					<div class="wrap cf"></div>
+				</div>
+				<div class="banner_right_left">
+					<ul class="banner_right_list"></ul>
+					<div class="bar">
+						<span class="bar_spa bar_first">1</span>
+						<span class="bar_gang"></span>
+						<span class="bar_spa bar_last">4</span>
+					</div>
+					<div class="dd">
+						<span class="fl on"></span>
+						<span class="fl"></span>
+						<span class="fl"></span>
+						<span class="fl"></span>
+					</div>
+					<div class="btn prev"></div>
+					<div class="btn next"></div>
+				</div>
+				<div class="banner_right_right">
+					<ul class="banner_right_right_list"></ul>
+					<div class="bar bar_right">
+						<span class="bar_spa bar_first">1</span>
+						<span class="bar_gang"></span>
+						<span class="bar_spa bar_last">5</span>
+					</div>
+					<div class="btn prev"></div>
+					<div class="btn next"></div>
+				</div>
+			</div>
+		</div>
+			<!-- 轮播图end -->
+<!-- ------------------------------------------------------------------------ -->
+			<!-- 特价秒杀seckill区域 -->
+		<div id="seckill">
+			<div class="guochao fl">
+				<div class="guochao-info">
+					<div class="guochao-inner">
+						<h2>国潮正当季</h2>
+						<div class="guochao-bg"></div>
+					</div>
+				</div>
+				<ul class="guochao-list"></ul>
+			</div>
+			<div class="seck-r fr">
+				<div class="seck-t">
+					<h2>限时特价秒杀</h2>
+					<div class="miaosha">
+						<div class="time-wrap">
+							<span class="time-title">
+								距
+								<span class="time"></span>
+								场结束
+							</span>
+							<span class="time-datail">
+								<span>00</span>
+								<i>:</i>
+								<span>00</span>
+								<i>:</i>
+								<span>00</span>
+							</span>
+						</div>
+						<div class="progress-bar">
+							<span class="progress-first">1</span>
+							<span class="gap"></span>
+							<span class="progress-last">2</span>
+						</div>
+						<ul class="miaosha-list cf"></ul>
+						<div class="btn prev"></div>
+						<div class="btn next"></div>
+					</div>
+				</div>
+				<div class="seck-b">
+					<h2>发现好物</h2>
+					<ul class="seck-b-list"></ul>
+				</div>
+			</div>
+		</div>
+			<!-- 特价秒杀end -->
+<!-- ------------------------------------------------------------------------ -->
+			<!-- 推荐recommend区域-->
+		<div id="recommend"></div>
+			<!-- 推荐end -->
+<!-- ------------------------------------------------------------------------ -->
+			<!-- 主体内容center区域 -->
+		<div id="center">
+			<div class="center-box">
+				<h2>好物精选</h2>
+				<ul class="center-list cf"></ul>
+			</div>
+		</div>
+			<!-- 主体内容end -->
+	</div>
+	<!-- 底部footer区域 -->
+	<div id="footer">
+		<a href="#">关于我们</a>
+		<a href="#">常见问题</a>
+		<a href="#">反馈意见</a>
+		<a href="#">全站地图</a>
+		<a href="#">京ICP</a>
+	</div>
+	<!-- 底部end -->
+</body>
+<!-- JS函数执行 -->
+<script type="text/javascript">
+	onload=function(){
+		/*头部header区域*/
+		header();
+		/*轮播图banner区域*/
+		banner();
+		/*seckill特价秒杀区域*/
+		seckill();
+		/*recommoned热门推荐区域*/
+		recommend(); 
+		/*center主体内容区域*/ 
+		center();
+		/*footer底部区域*/
+		footer();
+	};	
+</script>
+</html>

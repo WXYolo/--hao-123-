@@ -1,0 +1,144 @@
+#nav{
+	width: auto;
+	height: 26px;
+	position: relative !important;
+	background: #f2f2f2;
+	z-index: 99999;
+	-webkit-transform: translate3d(0,0,0);
+	border-bottom: 1px solid #e5e5e5;
+	color: #999;
+}
+.sn-bd{
+	width: 1190px;
+	margin: 0 auto;
+	position: relative;
+}
+.sn-bd a{
+	padding: 0 10px;
+	color: #999;
+}
+.sn-bd a:hover{
+	color: #FF0036;
+	text-decoration: underline;
+}
+.back-home{
+	height: 26px;
+	line-height: 26px;
+	margin-right: 20px;
+	float: left;
+}
+.back-home a{
+	color: #999;
+}
+.back-home a:hover{
+	color: #FF0036;
+	text-decoration: underline;
+}
+.login-info{
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+}
+.quick-menu{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 26px;
+	line-height: 26px;
+	-webkit-backface-visibility: hidden;	
+}
+.sn-bd i{
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+    color: #FF0036;
+    font-family: mui-global-iconfont !important;
+	font-size: 12px;
+	font-style: normal;
+}
+.login-info>em{
+	font-style: normal;
+}
+.login-info a{
+	color: #999;
+	padding: 0 10px;
+}
+.btn_login{
+	padding-left: 20px;
+}
+
+.login-info a:hover{
+	color: #FF0036;
+	text-decoration: underline;
+}
+.quick-menu li{
+	float: left;
+	position: relative;
+}
+.quick-menu li:hover a{
+	color: #FF0036;
+	text-decoration: underline;
+	background-color: #fff;
+	border-color: #eee;
+	padding-bottom: 1px;
+}
+.quick-menu .qucik-a{
+	padding-right: 14px;
+	display: block;
+	height: 26px;
+	cursor: pointer;
+	z-index: 100001;
+	border: solid #f2f2f2;
+	border-width: 0 1px;
+	position: relative;
+}
+.qucik-a b{
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	right: 6px;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border-width: 3px;
+	border-style: solid dashed dashed dashed;
+	border-color: #bbb transparent transparent transparent;
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+}
+.quick-menu li:hover b{
+	-webkit-backface-visibility: hidden;
+	border-color: #bbb transparent transparent;
+	transition: transform .2s ease-in;
+	transform: rotate(180deg);
+	transform-origin: 50% 30%;
+}
+.card{
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	padding: 0 10px;
+}
+.quick-menu .card:hover a{
+	background:none;
+	border-color: none;
+	padding-bottom: 0;
+}
+.quick-menu .gang{
+	width: 0;
+	height: 14px;
+	line-height: 14px;
+	position: relative;
+	top: 6px;
+	left: 0;
+	font-size: 0;
+	border-left: 1px solid #ccc;
+	margin: 0 2px 0 5px;
+}
+.quick-menu .tbw .qucik-a{
+	padding: 0 10px;
+}
+.quick-menu .card a{
+	padding: 0;
+}
+/*导航区域*/

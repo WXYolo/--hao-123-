@@ -1,0 +1,440 @@
+#header {
+    margin: -30px 0 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: auto !important;
+    border-bottom: 1px solid #c8baaa;
+    background: #fff;
+    min-width: 990px;
+    position: relative;
+    z-index: 1000;
+    height: auto;
+}
+
+.headerCon {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    height: 85px;
+    font-family: tahoma, arial, "\5b8b\4f53";
+}
+
+#mallLogo {
+    float: left;
+    width: 162px;
+    padding-top: 0;
+    line-height: 18px;
+    position: relative;
+    z-index: 9;
+    height: 64px;
+}
+
+#shopExtra {
+    float: left;
+    position: relative;
+    padding: 15px 0 0;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.shopwt {
+    float: left;
+    width: 54px;
+    border-left: 1px solid #f0f0f0;
+    padding: 0 10px;
+    margin: 15px 0 0;
+    position: relative;
+}
+
+.header-extra {
+    overflow: hidden;
+}
+
+#mallLogo span {
+    padding-right: 7px;
+    float: left;
+    padding-top: 20px;
+    width: 142px;
+    height: 26px;
+    background: url('../../img/shopping/logo.png') no-repeat 0 20px;
+    background-size: 142px 26px;
+}
+
+.slogo {
+    background: -174px -30px no-repeat;
+    float: left;
+    padding: 0 10px;
+    height: 38px;
+    border-left: 1px solid #f0f0f0;
+    width: auto;
+}
+
+.shop-info {
+    position: relative;
+    float: left;
+    width: 132px;
+    height: 38px;
+    font-weight: 400;
+    padding: 0 10px;
+    border-left: 1px dotted #f0f0f0;
+    background: url('../../img/shopping/min.png') no-repeat;
+    background-size: 128px 34px;
+    cursor: pointer;
+}
+
+.slogo-a {
+    line-height: 19px;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "\5b8b\4f53";
+    color: #333;
+    font-weight: 700;
+}
+
+.slogo-a:hover {
+    text-decoration: underline;
+}
+
+.onlin {
+    width: 18px;
+    height: 22px;
+    line-height: 19px;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "\5b8b\4f53";
+    color: #333;
+    font-weight: 700;
+    display: block;
+    background-image: url('../../img/shopping/logo.gif');
+}
+
+.shopwt-txt {
+    text-align: center;
+    color: #999;
+    font-weight: 400;
+}
+
+.jt {
+    float: left;
+    display: block;
+    margin: 0 0 0 4px;
+    width: 6px;
+    height: 38px;
+    position: relative;
+}
+
+.jt i {
+    border-color: #ccc #fff #fff;
+    border-style: solid;
+    border-width: 4px;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+#shopExtra:hover i {
+    border-color: #fff #fff #ccc !important;
+}
+
+.shopwt>i {
+    font-style: normal;
+    width: 24px;
+    height: 24px;
+    font-family: tm-shop-font;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    color: #999;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: url(../../img/shopping/tu.png) no-repeat;
+}
+
+.shopwt .jt {
+    top: -4px;
+    left: 26px;
+    display: block;
+    margin: 0 0 0 14px;
+    width: 6px;
+    height: 38px;
+    position: relative;
+}
+
+.shopwt .jt i {
+    border-color: #ccc #fff #fff;
+    border-style: solid;
+    border-width: 4px;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.shopwt:hover i {
+    border-color: #fff #fff #ccc !important;
+}
+
+.sm {
+    position: absolute;
+    left: -1px;
+    top: 51px;
+    z-index: 9999;
+    height: 178px;
+    width: 160px;
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    display: none;
+}
+
+.sm img {
+    margin: 10px 10px 0;
+    width: 140px;
+    height: 140px;
+}
+
+.sm p {
+    width: 160px;
+    text-align: center;
+    color: #9E958C;
+}
+
+.shopwt:hover .sm {
+    display: block;
+}
+
+.mall-search {
+    width: 540px !important;
+    padding: 15px 0 0;
+    overflow: hidden;
+    float: right;
+}
+
+.mallSearch-form {
+    height: 36px;
+    position: relative;
+}
+
+.mallSearch-form .defaultSearch {
+    width: 455px;
+    border: solid #ff0036;
+    height: 30px !important;
+    overflow: hidden;
+    position: relative;
+    border-width: 3px 0 3px 3px;
+}
+
+.s-combobox {
+    float: left;
+    height: 30px;
+    font-size: 12px;
+}
+
+.s-combobox-input-wrap {
+    position: relative;
+    height: 30px;
+    font-size: 12px;
+}
+
+.s-combobox-input {
+    width: 367px !important;
+    padding: 5px 3px 5px 5px;
+    color: #000;
+    margin: 0;
+    z-index: 2;
+    height: 20px;
+    line-height: 20px;
+    outline: 0;
+    border: none;
+    font-weight: 900;
+    box-sizing: content-box;
+    border-radius: 2px 0 0 2px;
+    font-size: 100%;
+    vertical-align: middle;
+    overflow-y: visible;
+}
+
+.s-combobox-placeholder {
+    color: rgb(102, 102, 102);
+    visibility: visible;
+    max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#J_SearchBtn {
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 30px;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff0036;
+    overflow: hidden;
+    font-family: '\5FAE\8F6F\96C5\9ED1', arial, "\5b8b\4f53";
+    position: absolute;
+    z-index: 1;
+}
+
+.currShopBtn {
+    left: auto;
+    right: 0;
+    top: 0;
+    background: #333;
+    width: 80px;
+    height: 36px;
+    position: absolute;
+    z-index: 1;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    cursor: pointer;
+    color: #fff;
+    overflow: hidden;
+    font-family: '\5FAE\8F6F\96C5\9ED1', arial, "\5b8b\4f53";
+}
+
+.tb-shop {
+    max-height: 150px;
+    overflow: hidden;
+    padding-bottom: 0;
+    position: relative;
+    background: url(../../img/shopping/hd-bg.jpg) repeat left 0 #FFFFFF;
+    margin-bottom: 10px;
+    min-width: 990px;
+}
+
+.layou {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skin-box {
+    width: 990px !important;
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+    height: 115px !important;
+    background: url(../../img/shopping/sp1.jpg) repeat 0 0 !important;
+    height: 115px !important;
+}
+
+.tshop-pbs {
+    width: 990px !important;
+    display: block !important;
+    overflow: hidden;
+    height: 60px;
+}
+
+.skin-box-bd {
+    border: 0;
+    overflow: hidden;
+    height: 60px;
+    background-color: rgba(136, 102, 85, .9);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.all-cats {
+    float: left;
+}
+
+.menu-list {
+    width: 760px;
+    float: left;
+    margin-left: 1px;
+}
+
+.all-cats .link {
+    background: #59453e;
+    border: 0;
+    height: 30px;
+    line-height: 30px;
+    width: 168px;
+    display: block;
+    padding: 0 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.all-cats .link span {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 0;
+    display: block;
+    float: left;
+}
+
+.icon-i {
+    margin-top: 7px;
+    width: 13px;
+    height: 17px;
+    overflow: hidden;
+    display: block;
+    float: right;
+    background: url(../../img/shopping/sp-bg.png) no-repeat 9999px 9999px;
+    background-position: -74px -98px;
+}
+
+.link:hover .icon-i {
+    background-position: -91px -98px;
+}
+
+.menu-list li {
+    padding-right: 2px;
+    float: left;
+}
+
+.menu-list a {
+    background: 0 0;
+    border: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+}
+
+.menu-list span {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 10px;
+    display: block;
+    float: left;
+}
+
+.menu-list li:hover a {
+    background: #59453e;
+}
+
+.menu-list li:hover i {
+    background-position: -91px -98px;
+}
