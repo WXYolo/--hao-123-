@@ -121,8 +121,11 @@
             color: #3c3c3c;
             margin: 9px 10px 0 0;
             font-weight: 700;
-            border-bottom: 2px solid #000;
             display: inline-block;
+        }
+        
+        .underLine {
+            border-bottom: 2px solid #000;
         }
         
         .sms-login-tab-item {
@@ -171,7 +174,7 @@
             background-size: 40px 40px;
         }
         
-        .fm-btn button {
+        .fm-btn .fmbtn_submit {
             background: #f40;
             border-color: #f40;
             font-size: 16px;
@@ -183,6 +186,7 @@
             width: 100%;
             cursor: pointer;
             border-radius: 3px;
+            text-align: center;
         }
         
         .login-links {
@@ -260,64 +264,122 @@
         .native-phone-code-select option {
             color: #3c3c3c;
         }
-        .send-btn{
-        	position: absolute;
-right: 10px;
-bottom: 0;
-line-height: 40px;
+        
+        .send-btn {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            line-height: 40px;
         }
-        .send-btn-link{
-        	color: #6c6c6c;
-font-size: 12px;
+        
+        .send-btn-link {
+            color: #6c6c6c;
+            font-size: 12px;
         }
-        .view-type-password{
+        
+        .view-type-password {
             height: 44px;
-width: 100%;
-margin: 0 auto;
+            width: 100%;
+            margin: 0 auto;
         }
-        .iconfontOn{
+        
+        .iconfontOn {
             background: url('../../img/login/pc.png') no-repeat right 0;
         }
-        .master-login-title{
+        
+        .master-login-title {
             height: 18px;
-line-height: 18px;
-font-size: 16px;
-color: #3c3c3c;
-margin-top: 9px;
-padding-bottom: 8px;
-font-weight: 700;
+            line-height: 18px;
+            font-size: 16px;
+            color: #3c3c3c;
+            margin-top: 9px;
+            padding-bottom: 8px;
+            font-weight: 700;
         }
-        .nc-outer-box{
+        
+        .nc-outer-box {
             width: 100%;
-margin: 0 auto;padding-top: 2px;
+            margin: 0 auto;
+            padding-top: 2px;
         }
-        .login-blocks{
+        
+        .login-blockks {
             margin: 8px 0;
-text-align: right;
+            text-align: right;
         }
-        .login-blocks a{
-             color: #6c6c6c;
+        
+        .login-blockks a {
+            color: #6c6c6c;
             font-size: 12px;
             display: inline-block;
             margin-left: 10px;
         }
-        .qrcode-img{
+        
+        .qrcode-img {
             position: relative;
-margin: 20px auto;
-font-size: 14px;
-background-color: #fff;
-
-box-shadow: 0 0 8px #ddd;
-opacity: 1;
-width: 140px;
-height: 140px;
+            margin: 20px auto;
+            font-size: 14px;
+            background-color: #fff;
+            box-shadow: 0 0 8px #ddd;
+            opacity: 1;
+            width: 140px;
+            height: 140px;
         }
-        .qrcode-desc{
-            width: 188px;overflow: hidden;
-margin: 0 auto;
+        
+        .qrcode-desc {
+            width: 188px;
+            overflow: hidden;
+            margin: 0 auto;
         }
-        .qrcode-desc p{
-            
+        
+        .qrcode-desc p {
+            font-size: 12px;
+            padding-left: 44px;
+            margin: 0;
+        }
+        
+        .qrcode-desc a {
+            color: #6c6c6c;
+            font-size: 12px;
+        }
+        
+        .qrcode-img img {
+            width: 130px;
+            height: 130px;
+            margin: 5px;
+        }
+        
+        .dl {
+            display: block !important;
+        }
+        
+        .login-error {
+            border-color: #ffb4a8;
+            background-color: #fef2f2;
+            margin-top: -11px;
+            position: relative;
+            margin-bottom: 10px;
+            border-color: #ffb4a8;
+            border: 1px solid #ff934c;
+            background: #fefcee;
+            font-size: 14px;
+            padding: 5px 8px;
+            overflow: hidden;
+        }
+        
+        .login-error-msg {
+            font-size: 12px;
+            padding-left: 20px;
+        }
+        
+        .icon {
+            width: 18px;
+            height: 20px;
+            background: url(../../img/login/error.png) no-repeat;
+        }
+        
+        .error {
+            display: block;
         }
     </style>
 </head>
@@ -325,9 +387,9 @@ margin: 0 auto;
 <body>
     <div id="container">
         <!-- 扫码登录 -->
-        <i class="iconfont iconfontOn"></i>
+        <i class="iconfont"></i>
         <!-- 扫码登录DIV -->
-        <div class="sm-login">
+        <div class="sm-login" style="display:none">
             <div class="view-type-password">
                 <div class="master-login-title">手机扫码，安全登录</div>
             </div>
@@ -339,19 +401,25 @@ margin: 0 auto;
                         </div>
                         <div class="qrcode-desc">
                             <img src="../../img/login/smm.png" class="fl">
-                            <p></p>
+                            <p>
+                                <span>打开</span>
+                                <a href="#" class="light-link">淘宝</a> |
+                                <a href="#">天猫</a>
+                                <br>
+                                <span>扫一扫登录</span>
+                            </p>
                         </div>
                     </div>
-                    <div class="login-blocks">
-                        <a href="#">密码登录</a>
+                    <div class="login-blockks">
+                        <a class="mmdl" href="#">密码登录</a>
                         <a href="#">免费注册</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="login" style="display: none;">
+        <!-- 密码短信登录 -->
+        <div id="login" style="display: block;">
             <div class="corner-icon-view view-type-qrcode">
-            	
                 <div class="login-tip">
                     <div class="poptip">
                         <div class="poptip-arrow">
@@ -365,26 +433,30 @@ margin: 0 auto;
             <div class="login-content">
                 <div class="login-password">
                     <div class="login-blocks">
-                        <a href="#" target="_self" class="password-login-tab-item">密码登录</a>
-                        <a href="#" target="_self" class="sms-login-tab-item">短信登录</a>
+                        <a xb="a" href="#" target="_self" class="password-login-tab-item underLine">密码登录</a>
+                        <a xb="b" href="#" target="_self" class="sms-login-tab-item">短信登录</a>
                     </div>
                     <form class="login-form">
-                    	<!-- 密码登录 -->
-                        <div class="passLogin" style="display: none;">
+                        <div class="login-error" style="display:none">
+                            <div class="icon fl"></div>
+                            <div class="login-error-msg">请输入密码</div>
+                        </div>
+                        <!-- 密码登录 -->
+                        <div index="a" style="display:none" class="passLogin dl">
                             <div class="fm-field">
                                 <div><label class="fm-label-icon"></label></div>
                                 <div class="input-plain-wrap">
-                                    <input type="text" placeholder="会员名/邮箱/手机号" name="">
+                                    <input type="text" placeholder="会员名/邮箱/手机号" name="username">
                                 </div>
                             </div>
                             <div class="fm-field">
                                 <div><label class="fm-label-icon icon-pw"></label></div>
                                 <div class="input-plain-wrap">
-                                    <input type="text" placeholder="请输入登录密码" name="">
+                                    <input type="password" placeholder="请输入登录密码" name="password">
                                 </div>
                             </div>
                             <div class="fm-btn">
-                                <button class="fmbtn_submit">登录</button>
+                                <div class="fmbtn_submit">登录</div>
                             </div>
 
                             <div class="login-links">
@@ -394,14 +466,11 @@ margin: 0 auto;
                             </div>
                         </div>
                         <!-- 短信登录 -->
-                        <div class="numberLogin">
+                        <div index="b" class="numberLogin" style="display: none;">
                             <div class="fm-field">
                                 <div><label class="fm-label-icon"></label></div>
                                 <div class="native-phone-code-select-wrap" data-content="+86">
-                                    <select class="native-phone-code-select" name="nativePhoneCodeSelector">
-                                    	<option value="{&quot;areaName&quot;:&quot;中国大陆&quot;,&quot;checkKey&quot;:&quot;^(86){0,1}1\\d{10}$&quot;,&quot;countryCode&quot;:&quot;CN&quot;,&quot;phoneCode&quot;:&quot;86&quot;}">+86 中国大陆</option>
-
-                                    </select>
+                                    <select class="native-phone-code-select" name="nativePhoneCodeSelector"></select>
                                 </div>
                                 <div class="input-plain-wrap">
                                     <input type="text" placeholder="请输入手机号" name="number">
@@ -410,14 +479,14 @@ margin: 0 auto;
                             <div class="fm-field">
                                 <div><label class="fm-label-icon icon-pw"></label></div>
                                 <div class="input-plain-wrap">
-                                    <input type="text" placeholder="请输入登录密码" name="">
+                                    <input type="text" placeholder="请输入登录密码" name="dx">
                                 </div>
                                 <div class="send-btn">
-                                	<a href="#" class="send-btn-link">获取验证码</a>
+                                    <a href="#" class="send-btn-link">获取验证码</a>
                                 </div>
                             </div>
                             <div class="fm-btn">
-                                <button class="fmbtn_submit">登录</button>
+                                <div class="fmbtn_submit">登录</div>
                             </div>
                             <div class="login-links">
                                 <a href="#">免费注册</a>
@@ -429,5 +498,6 @@ margin: 0 auto;
         </div>
     </div>
 </body>
+<script type="text/javascript" src="../js/login/login.js"></script>
 
 </html>
