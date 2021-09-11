@@ -139,7 +139,6 @@ cookie.get = function(key) {
     var obj = {};
     for (var i = 0; i < arr.length; i++) {
         obj[arr[i].split('=')[0]] = arr[i].split('=')[1];
-        console.log(obj)
     };
     return obj[key] ? obj[key] : obj[' ' + key];
 };

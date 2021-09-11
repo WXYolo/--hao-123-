@@ -20,7 +20,8 @@
 <body>
 	<!-- 登录 -->
 	<div class="login">
-		
+		<div class="none">关闭</div>
+		<iframe target="_blanck" src="login.html" width="400" height="400"></iframe>
 	</div>
 	<!-- 登录end -->
 	<!-- 导航区域nav -->
@@ -324,10 +325,9 @@
 	<!-- detail商品区域end -->
 </body>
 <script type="text/javascript">
-	const init=()=>{
+	window.onload=()=>{
 		getData();
 		zoom();
 	};
-	init();
 </script>
 </html>

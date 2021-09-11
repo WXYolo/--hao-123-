@@ -9,6 +9,9 @@ const login=()=>{
 					if(tar.classList.contains('iconfontOn')){
 						$('.sm-login').style.display="block";
 						$("#login").style.display="none";
+						$('div.dl').classList.remove('dl');
+						$('.passLogin').classList.add('dl');
+						inPut()
 					}else{
 						$('.sm-login').style.display="none";
 						$("#login").style.display="block";
@@ -20,6 +23,7 @@ const login=()=>{
 				if(tar.classList.contains('mmdl')){
 					$('.iconfont').classList.remove("iconfontOn");
 					$('.sm-login').style.display="none";
+					inPut()
 					$("#login").style.display="block";
 					$('.login-error').style.display="none";
 					$(".password-login-tab-item").classList.add('underLine');
@@ -32,10 +36,16 @@ const login=()=>{
 					tar.classList.add('underLine');
 					$('.login-error').style.display="none";
 					$(".dl").classList.remove("dl");
+					inPut()
 					$(`div[index=${tar.getAttribute('xb')}]`).classList.add("dl");
 				};
 			};
 		},false);
+	};
+	function inPut(){
+		_('input').forEach(el=>{
+			el.value='';
+		});
 	};
 	function creat(){
 		fetch('../json/login/number.json')
@@ -73,11 +83,13 @@ const login=()=>{
 					}else{
 						$('.login-error').style.display="block";
 						$('.login-error-msg').innerHTML="密码或账户名不正确";
+						return;
 					};
-					console.log(el)
 				});
-				
+				inPut()
 			});
+
+			// document.body.innerHTML=""
 		});
 		$('.numberLogin .fmbtn_submit').addEventListener('click',e=>{
 			if($('[name=number]').value==""){
@@ -96,9 +108,11 @@ const login=()=>{
 			let tar=e.target;
 			console.log(tar);
 			if(tar.nodeName=="SELECT"){
-				let obj=new Object(tar.value);
+				let obj=eval("("+tar.value+")");
 				console.log(obj)
-				// $('.native-phone-code-select-wrap').setAttribute('data-content',obj.phoneCode)
+				$('.native-phone-code-select-wrap').setAttribute('data-content','+'+obj.phoneCode);
+				let reg=new RegExp(obj.checkKey);
+				console.log(reg)
 			};
 		},false);
 	};

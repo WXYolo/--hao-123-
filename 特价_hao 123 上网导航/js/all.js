@@ -631,7 +631,7 @@ const banner=()=>{
  const footer=()=>{
  	window.onscroll=function(e) {
  		console.log()
- 		if(document.documentElement.scrollTop>=4200){
+ 		if(document.documentElement.scrollTop>=4350){
  			$('#footer').style.display="block";
  		}else{
  			$('#footer').style.display="none";

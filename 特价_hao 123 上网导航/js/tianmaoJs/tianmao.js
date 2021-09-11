@@ -2,7 +2,6 @@ const getData=()=>{
 	fetch("../../json/shopping/shop.json")
 	.then(e=>e.json())
 	.then(data=>{
-		
 		function locationToMake(search){
 			search=search||location.search;
 			if(search){
@@ -19,10 +18,11 @@ const getData=()=>{
 		console.log(obj)
 		data.forEach((el,i)=>{
 			forIn(obj,(key,value)=>{
+				console.log(value,el.id)
 				if(value==el.id){
-					console.log(el);
 					{
 						let arr=[];
+						console.log(el.listImg)
 						el.listImg.forEach((el,i)=>{
 							arr.push(`
 									<li style="overflow: hidden;">
@@ -45,6 +45,9 @@ const getData=()=>{
 										</a>
 									</li>
 								`);
+							if(i==0){
+								$('.s-img').src=el;
+							};
 						});
 						$('.tb-thumb').innerHTML=arr.join('');
 					}
@@ -73,9 +76,12 @@ const getData=()=>{
 						});
 						$('.wrapCon ul').innerHTML=arr.join('');
 						banner();
-					}	
-				}else{
-					document.body.innerHTML=''
+					}
+					cookie.set('id',el.id);
+					if(cookie.get('username')){
+						$('.login-info em').innerHTML=`喵，欢迎<span style="color:red;">${cookie.get('username')}</span>来天猫`;
+						$('.btn_login').innerText="退出登录";
+					};
 				};
 			});
 		});
@@ -107,6 +113,10 @@ const getData=()=>{
 				};
 			};
 		},false);
+		$('[name=num]').addEventListener('keydown',e=>{
+			let reg=/[^\d]/gi;
+			$('[name=num]').value=$('[name=num]').value.replace(reg,"");
+		});
 		$(".tb-amount-widge").addEventListener('click',e=>{
 			let tar=e.target;
 			if(tar.nodeName=="SPAN"){
@@ -121,6 +131,9 @@ const getData=()=>{
 				};
 			};
 		},false);
+		$('.none').addEventListener('click',e=>{
+			$('.none').parentNode.style.display="none";
+		});
 		function taab(tar){
 			$('.tm-price').innerHTML=tar.getAttribute('price');
 			$('.s-img').setAttribute('src',tar.getAttribute('src'));
@@ -129,6 +142,7 @@ const getData=()=>{
 		};
 	};
 	eventList();
+	loginEvent();
 };
 const zoom=()=>{
 	const ele={
@@ -214,3 +228,36 @@ const banner=()=>{
 		})
 	},false);
 };
+// 登录事件
+const loginEvent=()=>{
+	let tt=null;
+	let login=$('.btn_login');
+	login.addEventListener('click',e=>{
+		if(cookie.get('username')){
+		$('.login-info em').innerHTML=`喵，欢迎<span style="color:red;">${cookie.get('username')}</span>来天猫`;
+			login.innerText="退出登录";
+		};
+		if(login.innerText==="请登录"&&!cookie.get("username")){
+			$('.login').style.display="block";
+			timer();
+		};
+		if(login.innerText==="退出登录"){
+			cookie.remove("username");
+			$('.login-info em').innerText="喵，欢迎来天猫";
+			login.innerText="请登录";
+			clearInterval(tt);
+		};
+	},false);
+	function timer(){
+		clearInterval(tt);
+		tt=setInterval(()=>{
+			if(cookie.get('username')){
+				$('.login').style.display="none";
+				$('.login-info em').innerHTML=`喵，欢迎<span style="color:red;">${cookie.get('username')}</span>来天猫`;
+				login.innerText="退出登录";
+				clearInterval(tt);
+			};
+		},30);
+	};
+};
+/*----------------------*/
